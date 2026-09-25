@@ -134,7 +134,8 @@ export default function Nav() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle className="hidden sm:grid" />
+            {/* Always visible, including on mobile where it sits left of the menu button */}
+            <ThemeToggle />
 
             <a
               href={`mailto:${profile.email}`}
@@ -207,17 +208,6 @@ export default function Nav() {
               >
                 {profile.email}
               </m.a>
-
-              <m.div
-                className="mt-3 flex items-center justify-between gap-4 border-2 border-ash-700 px-4 py-3"
-                variants={{
-                  hidden: { opacity: 0, y: 16 },
-                  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: EASE.hard } },
-                }}
-              >
-                <span className="label text-bone-mute">Appearance</span>
-                <ThemeToggle />
-              </m.div>
             </m.div>
           </m.div>
         )}

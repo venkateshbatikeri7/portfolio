@@ -15,6 +15,13 @@ import {
   IconPhone,
 } from '../ui/Icons'
 
+/* Keyed by the `label` on each entry in `profile.socials`. */
+const SOCIAL_ICONS = {
+  LinkedIn: <IconLinkedIn size={18} />,
+  GitHub: <IconGitHub size={18} />,
+  Email: <IconMail size={18} />,
+}
+
 const formatIST = () =>
   new Intl.DateTimeFormat('en-GB', {
     timeZone: profile.timezone,
@@ -128,28 +135,20 @@ export default function Contact() {
             </Magnetic>
           </m.div>
 
-          {/* Socials + copy */}
+          {/* Socials + copy — driven by profile.socials so the URLs live in one place */}
           <div className="mt-12 flex flex-col items-center gap-5">
             <div className="flex items-center gap-3">
-              <MagneticDot
-                href="https://linkedin.com/in/venkateshbs"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <IconLinkedIn size={18} />
-              </MagneticDot>
-              <MagneticDot
-                href="https://github.com/venkateshbs"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <IconGitHub size={18} />
-              </MagneticDot>
-              <MagneticDot href={`mailto:${profile.email}`} aria-label="Email">
-                <IconMail size={18} />
-              </MagneticDot>
+              {profile.socials.map((s) => (
+                <MagneticDot
+                  key={s.label}
+                  href={s.href}
+                  target={s.href.startsWith('http') ? '_blank' : undefined}
+                  rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  aria-label={s.label}
+                >
+                  {SOCIAL_ICONS[s.label]}
+                </MagneticDot>
+              ))}
             </div>
 
             <CopyButton value={profile.email} className="tag mt-1 px-4! py-2.5!">
