@@ -20,7 +20,7 @@ export const profile = {
   resumeFileName: 'Venkatesh_BS_Resume.pdf',
   socials: [
     { label: 'LinkedIn', href: 'https://linkedin.com/in/venkateshbs', short: 'in' },
-    { label: 'GitHub', href: 'https://github.com/venkateshbs', short: 'gh' },
+    { label: 'GitHub', href: 'https://github.com/venkateshbatikeri7', short: 'gh' },
     { label: 'Email', href: 'mailto:batikerisvenkatesh@outlook.com', short: '@' },
   ],
   education: {
