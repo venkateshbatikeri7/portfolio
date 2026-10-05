@@ -5,15 +5,15 @@ export const profile = {
   lastName: 'BS',
   fullName: 'Venkatesh BS',
   initials: 'VB',
-  role: 'Full Stack & Cloud-Native Engineer',
-  roleShort: 'Full Stack / Cloud',
-  tagline: 'Engineering scalable solutions for high-performance enterprise systems.',
+  role: 'Full Stack AI Engineer',
+  roleShort: 'Full Stack / AI',
+  tagline: 'Building AI-powered applications on scalable, cloud-native backends.',
   email: 'batikerisvenkatesh@outlook.com',
   phone: '+91-8904195663',
   phoneHref: 'tel:+918904195663',
   location: 'Bengaluru, Karnataka, India',
   timezone: 'Asia/Kolkata',
-  availability: 'Open to Full Stack / Cloud / AI engineering roles',
+  availability: 'Open to Full Stack AI / AI Engineer roles',
   // Imported through the bundler (not public/) so the URL is content-hashed
   // and always resolves to a real PDF instead of the SPA index.html fallback.
   resume: resumePdf,
@@ -39,18 +39,19 @@ export const heroStats = [
 ]
 
 export const rotatingRoles = [
-  'AI Automation Builder',
+  'Full Stack AI Engineer',
+  'Generative AI Engineer',
+  'RAG & LLM Systems',
+  'Prompt Engineer',
   'Cloud-Native Architect',
   'Backend Engineer',
-  'Full Stack Developer',
-  'Technical Lead',
 ]
 
 export const about = {
   kicker: 'Executive Summary',
   title: 'The cross-functional edge',
   lede: 'With 6+ years bridging complex backend systems and intuitive user experiences, I bring a rare dual perspective that accelerates product delivery and drives measurable business outcomes.',
-  body: 'My combination of full-stack engineering, cloud-native architecture and AI/ML integration lets me lead cross-functional teams in delivering enterprise solutions that consistently exceed performance benchmarks — from banking platforms processing millions of requests to AI agents automating manual workflows.',
+  body: 'My combination of full-stack engineering, cloud-native architecture and applied AI lets me lead cross-functional teams in delivering enterprise solutions that consistently exceed performance benchmarks — from banking platforms processing millions of requests to LLM agents and RAG pipelines automating manual workflows.',
   pillars: [
     {
       icon: 'layers',
@@ -73,19 +74,20 @@ export const about = {
 /** Reverse chronological — most recent first. Current role sits at the top. */
 export const experience = [
   {
-    company: 'Independent Upskilling',
+    company: 'Freelancer',
     location: 'Remote',
-    role: 'AI & Cloud Engineering',
-    period: 'Jan 2026 — Present',
-    tag: 'Current focus',
+    role: 'Full Stack AI Engineer',
+    period: 'Jan 2026 — Present · 9m',
+    tag: 'Current role',
     current: true,
     points: [
-      'Intensive specialisation in OpenAI API, LangChain and prompt engineering.',
-      'Built an AI agent with Next.js and Node.js that automates project file uploads end to end.',
-      'Shipped full-stack AI products pairing Next.js front-ends with Node.js services.',
-      'Practised vibe-coding methodology for rapid, iterative AI solution development and debugging.',
+      'Actively upskilling in Artificial Intelligence with a focus on Generative AI, Large Language Models (LLMs) and AI-powered application development.',
+      'Designing and evaluating prompt engineering strategies and Retrieval-Augmented Generation (RAG) pipelines for context-aware, domain-specific AI solutions.',
+      'Integrating AI APIs into full-stack web applications — building AI agents and intelligent automation workflows on Node.js and Java services.',
+      'Pairing modern front-end frameworks with scalable back-ends and AWS infrastructure to ship production-ready AI products.',
+      'Continuously exploring practical AI use cases to validate real-world impact.',
     ],
-    stack: ['OpenAI API', 'LangChain', 'Next.js', 'Node.js', 'NLP', 'Prompt Eng.'],
+    stack: ['Generative AI', 'LLMs', 'RAG', 'Prompt Eng.', 'OpenAI API', 'LangChain', 'Node.js'],
   },
   {
     company: 'Infosys BPM',
@@ -174,18 +176,18 @@ export const projects = [
   {
     id: 'ai-agent',
     index: '03',
-    tag: 'AI Integration',
-    title: 'AI-Powered Automation Agent',
+    tag: 'Generative AI',
+    title: 'RAG & AI Agent Pipeline',
     description:
-      'Designed an intelligent agent that parses natural-language instructions, classifies incoming project artefacts and automates uploads and downstream workflow routing.',
+      'Designed an LLM agent with a Retrieval-Augmented Generation pipeline that parses natural-language instructions, grounds responses in a vector-backed knowledge base and automates uploads and downstream workflow routing.',
     impact: 'Automated',
     impactLabel: 'manual workflows',
     metrics: [
       { k: 'Manual steps removed', v: 96 },
-      { k: 'Classification accuracy', v: 90 },
+      { k: 'Retrieval accuracy', v: 90 },
       { k: 'Time to ship', v: 70 },
     ],
-    stack: ['Next.js', 'Node.js', 'LangChain', 'OpenAI API'],
+    stack: ['LangChain', 'OpenAI API', 'RAG', 'Node.js', 'Embeddings'],
     accent: 'red',
   },
   {
@@ -272,10 +274,10 @@ export const skillGroups = [
   },
   {
     key: 'ai',
-    label: 'AI & ML',
+    label: 'AI & LLMs',
     icon: 'spark',
     blurb: 'Intelligence integrated into real workflows.',
-    skills: ['OpenAI API', 'LangChain', 'NLP', 'Prompt Eng.', 'Hugging Face', 'TensorFlow', 'Gen AI'],
+    skills: ['Generative AI', 'LLMs', 'RAG', 'Prompt Eng.', 'OpenAI API', 'LangChain', 'AI Agents', 'Hugging Face', 'TensorFlow'],
   },
   {
     key: 'leadership',
@@ -295,14 +297,16 @@ export const marqueeItems = [
   'Docker',
   'PostgreSQL',
   'LangChain',
-  'Angular',
+  'Generative AI',
+  'RAG',
   'Python',
-  'Kubernetes',
+  'Angular',
   'Redis',
   'Tailwind',
   'Spring Boot',
   'RabbitMQ',
   'OpenAI API',
+  'LLMs',
   'GraphQL',
   'Terraform',
 ]
@@ -311,7 +315,7 @@ export const contact = {
   kicker: 'Get in touch',
   title: "Let's build something",
   titleAccent: 'great.',
-  body: "I'm actively seeking opportunities to apply my experience across full-stack development, cloud architecture and AI integration. Tell me what you're building and I'll show you how I'd approach it.",
+  body: "I'm actively seeking opportunities to apply my experience across full-stack AI development, cloud architecture and LLM integration. Tell me what you're building and I'll show you how I'd approach it.",
 }
 
 export const navLinks = [
